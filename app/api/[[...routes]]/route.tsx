@@ -34,7 +34,8 @@ app.frame('/', (c) => {
       </Box>
     ),
     intents: [
-      <Button>Show Quote</Button>
+      <Button>Show Quote</Button>,
+      <Button.Link href="https://warpcast.com/~/compose?text=Frame%20by%20@jplans-crypto&embeds[]=https%3A%2F%2Ffarcast-quoteframe.vercel.app%2Fapi">Share</Button.Link>
     ],
   })
 });
@@ -67,6 +68,7 @@ app.frame('/submit', async (c) => {
       </Box>
     ),
     intents: [
+      <Button.Link href="https://warpcast.com/~/compose?text=Frame%20by%20@jplans-crypto&embeds[]=https%3A%2F%2Ffarcast-quoteframe.vercel.app%2Fapi">Share</Button.Link>,
       <Button>Reset</Button>
     ],
   })
